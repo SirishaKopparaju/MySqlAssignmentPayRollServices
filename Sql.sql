@@ -37,6 +37,13 @@ alter table Employee_payroll add deductions double not null after basic_pay;
 alter table Employee_payroll add taxable_pay double not null after deductions;
 alter table Employee_payroll add tax double not null after taxable_pay;
 alter table Employee_payroll add net_pay double not null after tax;
+insert into Employee_payroll 
+       (id,EmpName,phone_number,address,department,gender,basic_pay,deductions,taxable_pay,tax,net_pay,EmpstartDate)
+values(7,'Terissa','9898989898','hyd','Sales','F',4800000,100000,40000,5400,4000000,'2021-01-08');
+insert into Employee_payroll 
+       (id,EmpName,phone_number,address,department,gender,basic_pay,deductions,taxable_pay,tax,net_pay,EmpstartDate)
+values(9,'Terissa','9898989898','pune','Marketing','F',4800000,100000,40000,5400,4000000,'2021-01-08');
+
 
 
 
