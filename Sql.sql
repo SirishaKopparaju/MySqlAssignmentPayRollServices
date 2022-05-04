@@ -26,5 +26,12 @@ select gender,avg(EmpSalary) from employee_payroll group by gender;
 select gender,max(EmpSalary) from employee_payroll group by gender;
 select gender,min(EmpSalary) from employee_payroll group by gender;
 select gender,count(*) from employee_payroll group by gender;
+alter table employee_payroll add phone_number varchar(13) after EmpName;
+alter table employee_payroll add address varchar(200) after phone_number;
+alter table employee_payroll add department varchar(100) not null after address;
+alter table employee_payroll alter address set default 'TBD';
+insert into employee_payroll (id,EmpName, EmpSalary,EmpStartDate,department,gender) 
+values(6,'Kajal', 49000, '2022-01-01','IT','F');
+
 
 
