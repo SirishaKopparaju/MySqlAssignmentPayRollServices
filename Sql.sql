@@ -11,3 +11,5 @@ insert into Employee_payroll value(4,"mohan",80000,13-08-2022);
 insert into Employee_payroll value(5,"katyayeni",90000,13-09-2022);
 use payroll_service;
 show tables;
+use payroll_service;
+select * from Employee_payroll;
