@@ -16,3 +16,9 @@ select * from Employee_payroll;
 select * from Employee_payroll where EmpName = 'sirisha';
 select * from Employee_payroll
 where EmpStartDate between '13-05-2022' and date(now());
+alter table Employee_payroll add gender char(2);
+alter table Employee_payroll add gender char(2) after EmpName;
+update Employee_payroll set gender = 'M' where id IN (3,4);
+update Employee_payroll set gender = 'F' where id IN (1,2,5);
+
+
