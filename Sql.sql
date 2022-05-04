@@ -1,1 +1,13 @@
 use payroll_service;
+show databases;
+insert into Employee_payroll value(1,"sirisha",50000,13-05-2022);
+show tables;
+select * from Employee_payroll;
+show databases;
+show tables;
+insert into Employee_payroll value(2,"sowjanya",60000,13-06-2022);
+insert into Employee_payroll value(3,"kittu",70000,13-07-2022);
+insert into Employee_payroll value(4,"mohan",80000,13-08-2022);
+insert into Employee_payroll value(5,"katyayeni",90000,13-09-2022);
+use payroll_service;
+show tables;
