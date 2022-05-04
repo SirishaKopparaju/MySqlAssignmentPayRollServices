@@ -13,3 +13,6 @@ use payroll_service;
 show tables;
 use payroll_service;
 select * from Employee_payroll;
+select * from Employee_payroll where EmpName = 'sirisha';
+select * from Employee_payroll
+where EmpStartDate between '13-05-2022' and date(now());
